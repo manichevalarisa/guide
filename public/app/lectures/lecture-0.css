@@ -1,0 +1,48 @@
+.edit-base .text-primary, h3 {
+    color: #1D6992 !important;
+}
+.ads b {
+    font-weight: 900;
+    color: #1D6992;
+    font-size: 20px;
+}
+.edit-base small, .text-warning {
+    color: rgb(194, 165, 242) !important; ;
+}
+.edit-base .text-default {
+    color: #FFD35D !important; ;
+}
+.edit-base .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle {
+    color: #ffffff ;
+    background-color: rgb(194, 165, 242) ;
+    border-color: rgb(194, 165, 242) ;
+}
+.edit-base .btn-outline-warning {
+    color: rgb(194, 165, 242);
+    border-color: rgb(194, 165, 242) ;
+}
+.edit-base .btn-outline-warning:hover {
+    color: #fff;
+    background-color: rgb(194, 165, 242) ;
+    border-color: rgb(194, 165, 242) ;
+}
+
+.edit-base .btn-outline-warning:focus, .btn-outline-warning.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(194, 165, 242, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(194, 165, 242, 0.5);
+}
+.edit-base .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(194, 165, 242, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(194, 165, 242, 0.5);
+}
+.add-number {
+    border: 2px solid rgb(194, 165, 242);
+    padding: 5px 13px;
+    border-radius: 100%;
+    background: rgb(194, 165, 242);
+    color: white !important;
+}
+.block-content p, .block-content .push, .block-content .block, .block-content .items-push > div {
+    margin-bottom: 0.7rem;
+}
+

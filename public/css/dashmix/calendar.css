@@ -1,0 +1,380 @@
+.hidden {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.disabled {
+    cursor: default;
+    color: #d0d0d094;
+}
+
+
+.calendar-container {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.main-container {
+    background: white;
+    color: #0865d0;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.calendar-container h4 {
+    color: #0865d0;
+    opacity: 0.7;
+}
+
+.calendar-container ul {
+    list-style: none;
+}
+
+.calendar-container a {
+    text-decoration: none;
+}
+
+.calendar-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid #0865d0;
+}
+
+.calendar-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.weekdays {
+    text-transform: uppercase;
+    color: #0865d0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.days li {
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.days li:hover {
+    color: #c74b43;
+}
+
+.previous-month {
+    opacity: 0.2;
+    cursor: default;
+}
+.previous-month:hover {
+    color: #0865d0;
+    opacity: 0.2;
+    cursor: default;
+}
+
+.date-with-event {
+    border: 2px solid #0865d0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.date-with-event:hover {
+    background: #0865d0;
+    color: #ecfffc;
+    font-weight: bold;
+}
+
+.event-count {
+    position: absolute;
+    top: -8%;
+    right: 15%;
+    font-size: 0.8rem;
+    background: #eef1f4;
+    color: #0865d0;
+    display: block;
+    padding: 0.5px 6px;
+    border-radius: 50px;
+}
+
+.event-count-taken {
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    font-size: 0.8rem;
+    background: #cc6363;
+    color: #fff;
+    display: block;
+    padding: 0.5px 6px;
+    border-radius: 50px;
+}
+
+
+
+.calendar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 2px solid #0865d0;
+}
+
+.add-event-btn {
+    color: #0865d0;
+    padding: 10px 15px;
+    border: 2px solid #0865d0;
+    border-radius: 50%;
+}
+
+.add-event-btn:hover {
+    background: #0865d0;
+    color: #ecfffc;
+}
+
+/*MEDIA*/
+/*IPHONE + */
+@media (min-width: 414px) and (max-width: 559.9px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        position: absolute;
+        top: 6%;
+        right: -1%;
+        font-size: 0.5rem;
+        background: #eef1f4;
+        color: #0865d0;
+        display: block;
+        padding: 2px 5px;
+        border-radius: 50px;
+    }
+}
+@media (min-width: 600.1px) and (max-width: 767px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        position: absolute;
+        top: 6%;
+        right: 25%;
+        font-size: 0.5rem;
+        background: #eef1f4;
+        color: #0865d0;
+        display: block;
+        padding: 2px 5px;
+        border-radius: 50px;
+    }
+}
+@media (min-width: 560px) and (max-width: 600px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        position: absolute;
+        top: 6%;
+        right: 18%;
+        font-size: 0.5rem;
+        background: #eef1f4;
+        color: #0865d0;
+        display: block;
+        padding: 2px 5px;
+        border-radius: 50px;
+    }
+}
+/*IPHONE 5*/
+@media (max-width: 331px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        position: absolute;
+        top: 6%;
+        right: -13%;
+        font-size: 0.5rem;
+        background: #eef1f4;
+        color: #0865d0;
+        display: block;
+        padding: 2px 5px;
+        border-radius: 50px;
+    }
+}
+/*IPHONE 7*/
+@media (min-width: 331.1px) and (max-width: 413px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        right: -1%;
+    }
+}
+/*IPAD*/
+@media (min-width: 767.1px) and (max-width: 1025px) {
+    .calendar-body {
+        padding: 0;
+    }
+    .weekdays {
+        padding-left: 0;
+        font-size: 0.7rem;
+    }
+    .date-with-event {
+        border: 1px solid #0865d0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .days {
+        font-size: 15px;
+    }
+    .days {
+        padding-left: 0;
+    }
+    .event-count {
+        right: 27%;
+    }
+}
+/*IPAD*/
+@media (min-width: 1300px){
+
+   .adv-request-block {
+       max-height: 700px;
+   }
+    .adv-calendar-block {
+        max-height: 700px;
+    }
+
+    /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+    /* total width */
+    .scrollbar::-webkit-scrollbar {
+        background-color:#fff;
+        width:16px
+    }
+
+    /* background of the scrollbar except button or resizer */
+    .scrollbar::-webkit-scrollbar-track {
+        background-color:#fff
+    }
+    .scrollbar::-webkit-scrollbar-track:hover {
+        background-color:#f4f4f4
+    }
+
+    /* scrollbar itself */
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: #eef1f4;
+        border-radius:16px;
+        border:5px solid #fff
+    }
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #c2c2c2;
+        border:4px solid #f4f4f4;
+        cursor: pointer;
+    }
+
+    /* set button(top and bottom of the scrollbar) */
+    .scrollbar::-webkit-scrollbar-button {
+        display:none
+    }
+
+    /* div box */
+    .scrollbar {
+        overflow-y: scroll;
+        max-height: calc(700px - 100px);
+    }
+    .overflow{
+        min-height: 100vh
+    }
+}
+
